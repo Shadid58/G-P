@@ -1,0 +1,161 @@
+.okay{
+    height: 15px;
+    width: 15px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section header{
+    position: absolute;
+    display: flex;
+    top: 0;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px;
+}
+section header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section header ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+section header ul li a{
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+}
+section header ul li button{
+    background-color: #4584ef;
+    color: #fff;
+    padding: 8px 14px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.google{
+    height:75px ;
+    width: 220px;
+}
+.png{
+    height: 18px;
+    width: 15px;
+    background-color: white;
+}
+.mic{
+    height: 23px;
+    width: 15px;
+}
+.main{
+    width: 580px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px; 
+}
+.search{
+    width: 80%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+.icons{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    
+}
+.buttons{
+    margin: 20px;
+}
+.buttons button{
+    margin: 0px 5px;
+    padding: 12px 25px;
+    color: #555;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 1px solid transparent;
+}
+.buttons button:hover{
+    border: 1px solid #ccc;
+}
+.lang{
+    margin-top: 20px;
+}
+.bangla{
+    text-decoration: none;
+}
+.bangla:hover{
+    text-decoration: underline;
+}
+section .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0,0,0,0.05);
+    width: 100%;
+}
+.row ul{
+    display: flex;
+}
+.row ul li{
+    list-style: none;
+}
+.row ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #5f6368;
+    margin-right: 25px;
+}
+.row ul li a:hover{
+    text-decoration: underline;
+}
+@media (max-width:768px){
+     .search{
+        width: 70%;
+     }
+     .row ul{
+        display: block;
+     }
+     .buttons button{
+        padding: 10px 15px;
+     }
+}
